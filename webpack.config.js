@@ -5,7 +5,8 @@ module.exports = {
   entry: './src/app.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: process.env.NODE_ENV === 'production' ? './dist/' : '/dist/',
+    publicPath: '/dist/',
+    // publicPath: process.env.NODE_ENV === 'production' ? './dist/' : '/dist/',
     filename: process.env.NODE_ENV === 'production' ? 'build.[hash:4].js' : 'build.js',
     chunkFilename: "[name].[hash:4].min.js"
   },
