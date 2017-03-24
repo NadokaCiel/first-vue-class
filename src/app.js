@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import MintUI from 'mint-ui'
-import 'mint-ui/lib/style.css'
+// import MintUI from 'mint-ui'
+// import 'mint-ui/lib/style.css'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 import AMap from 'vue-amap'
@@ -21,7 +21,7 @@ AMap.initAMapApiLoader({
   plugin: ['AMap.Autocomplete', 'AMap.PlaceSearch', 'AMap.Scale', 'AMap.OverView', 'AMap.ToolBar', 'AMap.MapType', 'AMap.PolyEditor', 'AMap.CircleEditor']
 });
 Vue.use(Vuex)
-Vue.use(MintUI)
+// Vue.use(MintUI)
 Vue.use(ElementUI)
 
 
