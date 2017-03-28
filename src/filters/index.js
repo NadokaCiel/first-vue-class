@@ -1,14 +1,11 @@
-import Translator from '../store/Translator.js'
-import Role from '../store/Role.js'
-
-export function host(url) {
+export function host (url) {
   const host = url.replace(/^https?:\/\//, '').replace(/\/.*$/, '')
   const parts = host.split('.').slice(-3)
   if (parts[0] === 'www') parts.shift()
   return parts.join('.')
 }
 
-export function timeAgo(time) {
+export function timeAgo (time) {
   const between = Date.now() / 1000 - Number(time)
   if (between < 3600) {
     return pluralize(~~(between / 60), ' minute')
@@ -19,32 +16,64 @@ export function timeAgo(time) {
   }
 }
 
-export function translator(key, lang) {
-  if (!Translator[lang] || !Translator[lang][key]) {
-    return '{translate error}'
-  }
-  return Translator[lang][key]
-}
-
-export function verify(key, role, t, f) {
-  if (!Role[role] || !Role[role].includes(key)) {
+export function verify(key, permission, t, f) {
+  if (!permission.includes(key)) {
     return t ? t : true
   } else {
     return f ? f : false
   }
 }
 
-export function mapLang(lang) {
-  if (lang == 'en') {
-    return 'en'
-  } else if (lang == 'cn') {
-    return 'zh_cn'
+export function magnitude(num) {
+  if (!num) {
+    return "";
+  }
+  if (!/^\d+(\.\d+)?$/.test(num)) {
+    return num;
+  }
+  let str = (Math.round(num.toString().replace(/，|,/g, "")).toString()/10000).toFixed(1);
+  return str.replace('.0', '')
+}
+
+
+export function title(str) {
+  return str.replace(/\[image\].*?\[\/image\]/g, '');
+}
+
+export function thousands(num, typeStr) {
+  if (num == 0) {
+    return 0;
+  }
+  if (!num || isNaN(num)) {
+    return typeStr ? typeStr : "-";
+  }
+  return (num + '').replace(/\d{1,3}(?=(\d{3})+(\.\d*)?$)/g, '$&,');
+}
+
+export function gender(str) {
+  if (!str) {
+    return "";
+  }
+  if (str == 'M') {
+    return "男";
+  } else if (str == 'F') {
+    return "女";
   } else {
-    return 'zh_en'
+    return "";
   }
 }
 
-function pluralize(time, label) {
+export function priceTag(price) {
+  if (price == 0) {
+    return 0;
+  }
+  if (!price || isNaN(price)) {
+    return "-";
+  }
+  return thousands((price * 0.9).toFixed(0)) + ' ~ ' + thousands((price * 1.1).toFixed(0))
+}
+
+function pluralize (time, label) {
   if (time === 1) {
     return time + label
   }
