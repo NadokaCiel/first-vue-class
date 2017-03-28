@@ -1,0 +1,45 @@
+{
+    "responseData": {
+        "role": {
+            "id": 2,
+            "name": "管理员"
+        },
+        "permission": [{
+            "id": 1,
+            "name": "展示系统管理",
+            "selected": true,
+            "sub": [{
+                "id": 2,
+                "name": "用户列表",
+                "selected": false
+            }, {
+                "id": 3,
+                "name": "用户日志",
+                "selected": true
+            }, {
+                "id": 4,
+                "name": "删除用户",
+                "selected": false
+            }]
+        }, {
+            "id": 5,
+            "name": "系统用户管理",
+            "selected": true,
+            "sub": [{
+                "id": 6,
+                "name": "用户列表",
+                "selected": true
+            }, {
+                "id": 7,
+                "name": "用户日志",
+                "selected": true
+            }, {
+                "id": 8,
+                "name": "删除用户",
+                "selected": true
+            }]
+        }]
+    },
+    "responseCode": 0,
+    "responseMsg": ""
+}

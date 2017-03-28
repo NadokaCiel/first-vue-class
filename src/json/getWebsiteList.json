@@ -1,0 +1,44 @@
+{
+    "responseData": {
+        "total": 5,
+        "rows": [{
+            "id": 1,
+            "site_name":"估估车",
+            "logo_url":"/src/assets/logo/A-10.png",
+            "url":"http://guguiche.com/",
+            "weight":0
+        },{
+            "id": 2,
+            "site_name":"趣学车",
+            "logo_url":"/src/assets/logo/B-2.png",
+            "url":"http://www.goxueche.com/",
+            "weight":0
+        },{
+            "id": 3,
+            "site_name":"立方",
+            "logo_url":"/src/assets/logo/B-8.png",
+            "url":"http://www.reformer.com.cn/",
+            "weight":0
+        },{
+            "id": 4,
+            "site_name":"车车云",
+            "logo_url":"/src/assets/logo/B-12.png",
+            "url":"http://www.checheyun.cn/",
+            "weight":0
+        },{
+            "id": 5,
+            "site_name":"好车伯乐",
+            "logo_url":"/src/assets/logo/D-2.png",
+            "url":"http://www.autobole.com/",
+            "weight":15
+        },{
+            "id": 6,
+            "site_name":"asdhsdfh",
+            "logo_url":"",
+            "url":"ashdfh",
+            "weight":0
+        }]
+    },
+    "responseCode": 0,
+    "responseMsg": ""
+}

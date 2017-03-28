@@ -1,0 +1,31 @@
+{
+    "responseData": {
+        "articles": [{
+            "id": 1,
+            "title": "文章1",
+            "source":"腾讯新闻",
+            "url": "www.zhihu.com",
+            "content": "<p>文本啊说的很对萨芬哈代发货</p>"
+        }, {
+            "id": 2,
+            "title": "文章2",
+            "source":"网易新闻",
+            "url": "www.zhihu.com",
+            "content": "<p>的算法华东师大商会大厦</p>"
+        },{
+            "id": 3,
+            "title": "文章3",
+            "source":"百度新闻",
+            "url": "www.zhihu.com",
+            "content": "<p>啊啥的和添加他爱德华大好人阿尔</p>"
+        },{
+            "id": 4,
+            "title": "文章4",
+            "source":"致远星新闻",
+            "url": "www.zhihu.com",
+            "content": "<p>电视剧但实际上他如何我说的</p>"
+        }]
+    },
+    "responseCode": 0,
+    "responseMsg": ""
+}

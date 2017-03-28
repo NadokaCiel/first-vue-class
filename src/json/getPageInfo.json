@@ -1,0 +1,13 @@
+{
+    "responseData": {
+        "pages": [{
+            "id": 1,
+            "name":"首页"
+        },{
+            "id": 2,
+            "name":"行业热点首页"
+        }]
+    },
+    "responseCode": 0,
+    "responseMsg": ""
+}

@@ -1,0 +1,32 @@
+{
+    "responseData": {
+        "buzzwords": [{
+            "id": 1,
+            "name": "热词1"
+        }, {
+            "id": 2,
+            "name": "热词2"
+        }, {
+            "id": 3,
+            "name": "热词3"
+        }, {
+            "id": 4,
+            "name": "热词4"
+        }],
+        "sections": [{
+            "name": "上部",
+            "columns": [{
+                "ids": "1,2,3"
+            }]
+        }, {
+            "name": "下部",
+            "columns": [{
+                "ids": "7,9"
+            },{
+                "ids": "7,12"
+            }]
+        }]
+    },
+    "responseCode": 0,
+    "responseMsg": ""
+}

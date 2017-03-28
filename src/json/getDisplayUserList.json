@@ -1,0 +1,22 @@
+{
+    "responseData": {
+        "total": 2,
+        "rows": [{
+            "id": 1,
+            "username":"user1",
+            "sex":"M",
+            "loginCount":4,
+            "registrationTime":"2017-03-10 13:59:26",
+            "lastLoginTime":"2017-03-10 13:59:29"
+        },{
+            "id": 2,
+            "username":"user2",
+            "sex":"F",
+            "loginCount":7,
+            "registrationTime":"2017-03-10 13:59:26",
+            "lastLoginTime":"2017-03-10 13:59:29"
+        }]
+    },
+    "responseCode": 0,
+    "responseMsg": ""
+}

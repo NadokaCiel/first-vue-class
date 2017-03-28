@@ -1,0 +1,20 @@
+{
+    "responseData": {
+        "total": 2,
+        "rows": [{
+            "userId": 1,
+            "username":"admin",
+            "type":"ajax",
+            "actionName":"删除用户",
+            "time":"2017-03-10 11:27:30"
+        },{
+            "userId": 2,
+            "username":"admin2",
+            "type":"page",
+            "actionName":"角色列表",
+            "time":"2017-03-10 11:27:30"
+        }]
+    },
+    "responseCode": 0,
+    "responseMsg": ""
+}
