@@ -1,0 +1,9 @@
+{
+  "name":"my-lab",
+  "main":"/index.html",
+  "window":{
+    "min_width":400,
+    "min_height":400,
+    "icon":"assets/logo.png"
+  }
+}
